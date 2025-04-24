@@ -1,6 +1,6 @@
 <template>
   <nav
-    :class="['sticky top-0 z-50 transition-colors duration-300 border-none text-gray-900']"
+    :class="['sticky top-0 z-50 transition-colors duration-300 border-none bg-white text-gray-900']"
     role="navigation"
     style="height: 6vh"
   >
