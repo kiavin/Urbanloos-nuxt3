@@ -2,7 +2,7 @@
   <nav
     :class="['sticky top-0 z-50 transition-colors duration-300 border-none bg-white text-gray-900']"
     role="navigation"
-    style="height: 6vh"
+    style="height: 8vh"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-full pt-3">
@@ -95,7 +95,7 @@
             Home
           </NuxtLink>
           <NuxtLink
-            to="#about"
+            to="/about"
             :class="[
               'nav-link border-none block md:inline-block px-4 py-2 rounded-full hover:bg-pink-400',
               route.path === '/about' ? 'bg-[#5DBB63] text-black' : ''
