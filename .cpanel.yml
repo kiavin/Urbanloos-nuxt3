@@ -1,6 +1,6 @@
-  ---
-  deployment:
-    tasks:
-      - export DEPLOYPATH=/home/urbaxxok/public_html
-      - rm -rf $DEPLOYPATH/*
-      - cp -R .output/public/* $DEPLOYPATH
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/urbaxxok/public_html
+    - rm -rf $DEPLOYPATH/*
+    - cp -R .output/public/* $DEPLOYPATH
