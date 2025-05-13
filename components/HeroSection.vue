@@ -41,13 +41,13 @@
               <p>We specialize in serving a wide range of events and construction sites across Nakuru, Kiambu, Narok, Nyandarua, and Laikipia counties, with services expanding to neighboring regions as well.
             </p>
             <div class="flex mt-8 justify-center">
-              <a
-                href="#"
+                <nuxt-link
+                to="/contact"
                 class="uppercase py-2 px-4 rounded-lg text-white text-md mr-4"
                 style="background-color: #5dbb63; border: 2px solid transparent"
-              >
-                Get started
-              </a>
+                >
+                Get Instant Quote
+                </nuxt-link>
             </div>
           </div>
         </div>
