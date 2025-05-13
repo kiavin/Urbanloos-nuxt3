@@ -1,6 +1,6 @@
 <template>
   <main class="dark:bg-gray-800 bg-white relative overflow-hidden">
-    <div class="relative w-full" style="height: 90vh">
+    <div class="relative w-full" style="height: 92vh">
       <nuxt-img
         src="/images/IMG_20241227_084221_655.webp"
         class="absolute inset-0 w-full h-full object-cover"
@@ -35,8 +35,10 @@
                 > Everywhere You Need Us</span
               >
             </h1>
-            <p class="text-sm sm:text-base mt-4" style="color: #f9f9f9">
-              Urbanloos is proud to be Kenya’s trusted provider of high-quality mobile toilet solutions. We specialize in serving a wide range of events and construction sites across Nakuru, Kiambu, Narok, Nyandarua, and Laikipia counties, with services expanding to neighboring regions as well.
+            <p>
+              Urbanloos is proud to be Kenya’s trusted provider of high-quality mobile toilet solutions. 
+            </p>
+              <p>We specialize in serving a wide range of events and construction sites across Nakuru, Kiambu, Narok, Nyandarua, and Laikipia counties, with services expanding to neighboring regions as well.
             </p>
             <div class="flex mt-8 justify-center">
               <a
