@@ -113,7 +113,7 @@
             Services
           </NuxtLink>
           <NuxtLink
-            to="#locations"
+            to="/contact"
             :class="[
               'nav-link border-none block md:inline-block px-4 py-2 rounded-full hover:bg-pink-400',
               route.path === '/contact' ? 'bg-[#5DBB63] text-black' : ''
@@ -128,8 +128,9 @@
 </template>
 <script setup>
 import { ref } from "vue";
-import { useRoute } from "vue-router";
+import {  useRoute } from 'vue-router'
 
-const isMenuOpen = ref(false);
+const isMenuOpen = ref(false)
+
 const route = useRoute();
 </script>
