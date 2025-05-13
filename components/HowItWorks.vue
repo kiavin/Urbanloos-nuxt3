@@ -6,7 +6,7 @@
             <div class="max-w-2xl mx-auto text-center">
                 <h2 class="text-4xl text-pink-400 font-extrabold mx-auto md:text-6xl lg:text-5xl">How does it work?</h2>
                 <p class="max-w-2xl mx-auto mt-4 text-base text-gray-900 leading-relaxed md:text-2xl">
-                    Our AI solution will help you from start to finish
+                    Here is a step by by step guide on how to rent a mobile toilet from Urbanloos:
                 </p>
             </div>
             <div class="relative mt-12 lg:mt-20">
