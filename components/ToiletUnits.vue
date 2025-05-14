@@ -259,7 +259,6 @@ const vipUnitImages = [
                     width="800"
                     height="600"
                     loading="lazy"
-                    sizes="sm:100vw md:50vw lg:400px"
                   />
                 </div>
               </SwiperSlide>
