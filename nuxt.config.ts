@@ -50,12 +50,4 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/eslint'
   ],
-  image: {
-    providers: {
-      ipx: {
-        // Options for the IPX provider
-        dir: 'public',
-      }
-  }
-  },
 })
