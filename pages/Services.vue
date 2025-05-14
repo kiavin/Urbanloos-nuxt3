@@ -103,7 +103,7 @@
         <div
           class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
         >
-          <img
+          <NuxtImg
             src="/images/standard1.webp"
             alt="Standard mobile toilet"
             class="w-full h-100 object-cover"
@@ -213,7 +213,7 @@
         <div
           class="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl"
         >
-          <img
+          <NuxtImg
             src="/images/vip2.webp"
             alt="VIP mobile toilet"
             class="w-full h-100 object-cover"

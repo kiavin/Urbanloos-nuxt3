@@ -1,9 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
-  image: {
-    
-  },
+  nitro: {
+    prerender: {
+      routes: ['/']
+    },
+    compressPublicAssets: true,
+  },  
   ssr: true,
   app: {
     head: {
@@ -53,4 +56,15 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/eslint'
   ],
+  image: {
+    domains: ['urbanloos.com'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536
+    },
+  }
 })

@@ -34,7 +34,7 @@ const areas = [
           <div class="flex items-center -mx-3 sm:-mx-4">
             <div class="w-full px-3 sm:px-4 xl:w-1/2">
               <div class="py-3 sm:py-4">
-                <img
+                <NuxtImg
                   src="/images/w1600.jpg"
                   alt=""
                   class="w-full rounded-2xl"

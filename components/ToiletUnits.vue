@@ -89,7 +89,7 @@ const vipUnitImages = [
                 :key="index"
               >
                 <div class="w-full h-full relative">
-                  <img
+                  <NuxtImg
                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     :src="image.src"
                     :alt="image.alt"
@@ -270,7 +270,7 @@ const vipUnitImages = [
             >
               <SwiperSlide v-for="(image, index) in vipUnitImages" :key="index">
                 <div class="w-full h-full relative">
-                  <img
+                  <NuxtImg
                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     :src="image.src"
                     :alt="image.alt"
