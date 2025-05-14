@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 // import all components 
 import HeroSection from '~/components/HeroSection.vue'
 import AboutUs from '~/components/AboutUs.vue'
