@@ -5,7 +5,7 @@
         <div class="absolute inset-0 bg-black opacity-40"></div>
         <img src="https://plus.unsplash.com/premium_photo-1682125644324-97c2559473b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
              alt="Clean mobile toilet"
-             class="w-full h-64 object-cover">
+             class="w-full h-80 object-cover">
         <div class="absolute inset-0 flex items-center justify-center">
           <h1 class="text-4xl font-bold text-white">Get In Touch</h1>
         </div>
