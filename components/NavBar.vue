@@ -95,7 +95,7 @@
             Home
           </NuxtLink>
           <NuxtLink
-            to="/about"
+            to="/About"
             :class="[
               'nav-link border-none block md:inline-block px-4 py-2 rounded-full hover:bg-pink-400',
               route.path === '/about' ? 'bg-[#5DBB63] text-black' : ''
@@ -104,7 +104,7 @@
             About Us
           </NuxtLink>
           <NuxtLink
-            to="/services"
+            to="/Services"
             :class="[
               'nav-link border-none block md:inline-block px-4 py-2 rounded-full hover:bg-pink-400',
               route.path === '/services' ? 'bg-[#5DBB63] text-black' : ''
@@ -113,7 +113,7 @@
             Services
           </NuxtLink>
           <NuxtLink
-            to="/contact"
+            to="/Contact"
             :class="[
               'nav-link border-none block md:inline-block px-4 py-2 rounded-full hover:bg-pink-400',
               route.path === '/contact' ? 'bg-[#5DBB63] text-black' : ''
