@@ -2,17 +2,15 @@
   <section class="relative bg-[#5dbb63] overflow-hidden">
     <!-- Hero Container with optimized image -->
     <div class="relative w-full h-screen max-h-[92vh]">
-      <nuxt-img
+      <NuxtImg
         src="/images/IMG_20241227_084221_655.webp"
         class="absolute inset-0 w-full h-full object-cover"
-        loading="eager"
         alt="Premium mobile toilet rental service in Kenya - UrbanLoos"
         width="1920"
         height="1080"
-        sizes="sm:100vw md:100vw lg:100vw xl:100vw"
         format="webp"
         quality="80"
-        preload
+        priority
       />
       
       <!-- Overlay with improved contrast -->

@@ -143,7 +143,6 @@ const aboutImages = [
           loading="lazy"
           format="webp"
           quality="80"
-          sizes="(max-width: 640px) 95vw, (max-width: 1024px) 60vw, 564px"
         />
       </SwiperSlide>
     </Swiper>

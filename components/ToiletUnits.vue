@@ -92,7 +92,7 @@ const vipUnitImages = [
                 :key="index"
               >
                 <div class="w-full h-full">
-                  <nuxt-img
+                  <NuxtImg
                     class="w-full h-full object-cover"
                     :src="image.src"
                     :alt="image.alt"
@@ -101,7 +101,6 @@ const vipUnitImages = [
                     loading="lazy"
                     format="webp"
                     quality="100"
-                    sizes="sm:100vw md:50vw lg:400px"
                     preload
                   />
                 </div>
