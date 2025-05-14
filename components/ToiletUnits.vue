@@ -91,15 +91,14 @@ const vipUnitImages = [
                 v-for="(image, index) in standardUnitImages"
                 :key="index"
               >
-                <div class="w-full h-full responsive-img-wrapper">
-                  <NuxtImg
+                <div class="w-full h-full ">
+                  <img
                     class="w-full h-full object-cover"
                     :src="image.src"
                     :alt="image.alt"
                     width="800"
                     height="600"
                     loading="lazy"
-                    quality="100"
                   />
                 </div>
               </SwiperSlide>
@@ -253,7 +252,7 @@ const vipUnitImages = [
             >
               <SwiperSlide v-for="(image, index) in vipUnitImages" :key="index">
                 <div class="w-full h-full responsive-img-wrapper">
-                  <NuxtImg
+                  <img
                     class="w-full h-full object-cover"
                     :src="image.src"
                     :alt="image.alt"
@@ -413,48 +412,3 @@ const vipUnitImages = [
     </div>
   </section>
 </template>
-
-<style scoped>
-.animate-fade-up {
-  animation: fadeUp 0.8s ease-out forwards;
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Smooth transitions for view transitions */
-::view-transition-old(standard-unit),
-::view-transition-new(standard-unit),
-::view-transition-old(vip-unit),
-::view-transition-new(vip-unit) {
-  animation-duration: 0.5s;
-}
-
-.responsive-img {
-  width: 100%;     /* default for mobile */
-  height: auto;
-  object-fit: cover;
-}
-
-/* Tablet and above (min-width: 768px) */
-@media (min-width: 768px) {
-  .responsive-img {
-    width: 50vw;
-  }
-}
-
-/* Desktop and above (min-width: 1024px) */
-@media (min-width: 1024px) {
-  .responsive-img {
-    width: 400px;
-  }
-}
-</style>
