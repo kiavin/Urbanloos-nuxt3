@@ -103,7 +103,6 @@ const vipUnitImages = [
                     quality="100"
                     sizes="sm:100vw md:50vw lg:400px"
                     preload
-                    provider="ipx"
                   />
                 </div>
               </SwiperSlide>

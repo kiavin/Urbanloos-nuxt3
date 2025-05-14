@@ -13,7 +13,6 @@
         format="webp"
         quality="80"
         preload
-        provider="ipx"
       />
       
       <!-- Overlay with improved contrast -->
