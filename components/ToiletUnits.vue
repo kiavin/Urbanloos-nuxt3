@@ -259,7 +259,6 @@ const vipUnitImages = [
                     width="800"
                     height="600"
                     loading="lazy"
-                    quality="100"
                     sizes="sm:100vw md:50vw lg:400px"
                   />
                 </div>
