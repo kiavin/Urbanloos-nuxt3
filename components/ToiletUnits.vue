@@ -99,9 +99,6 @@ const vipUnitImages = [
                     width="800"
                     height="600"
                     loading="lazy"
-                    format="webp"
-                    quality="100"
-                    preload
                   />
                 </div>
               </SwiperSlide>

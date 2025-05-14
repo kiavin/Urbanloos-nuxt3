@@ -141,8 +141,6 @@ const aboutImages = [
           width="564"
           height="646"
           loading="lazy"
-          format="webp"
-          quality="80"
         />
       </SwiperSlide>
     </Swiper>
