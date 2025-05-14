@@ -3,10 +3,13 @@
     <!-- Hero Section -->
     <div class="relative bg-pink-600">
       <div class="absolute inset-0 bg-black opacity-40"></div>
-      <img
+      <NuxtImg
         src="/images/services1.webp"
         alt="Mobile toilet at event"
-        class="w-full h-96 object-cover"
+        class="w-full h-100 object-cover"
+        loading="lazy"
+        width="1920"
+        height="1080"
       />
       <div class="absolute inset-0 flex items-center justify-center">
         <div class="text-center px-4">

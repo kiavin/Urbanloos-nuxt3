@@ -5,7 +5,8 @@
       <NuxtImg
         src="/images/IMG_20241227_084221_655.webp"
         class="absolute inset-0 w-full h-full object-cover"
-        alt="Premium mobile toilet rental service in Kenya - UrbanLoos"
+        alt="UrbanLoos mobile toilet hire in Kenya"
+        title="Mobile Toilets Near Me in Kenya - UrbanLoos" 
         width="1920"
         height="1080"
       />
@@ -25,6 +26,13 @@
             <span class="block text-white text-4xl sm:text-6xl lg:text-7xl">Everyday Prices.</span>
             <span class="block text-[#5dbb63] text-4xl sm:text-6xl lg:text-7xl">Everywhere You Need Us</span>
           </h1>
+          <div class="sr-only">
+  Mobile toilets in Kenya, mobile toilets near me, portable toilet hire Naivasha,
+  rent a mobile toilet for weddings, affordable event toilets in Kenya,
+  clean portable toilets for hire, UrbanLoos mobile toilet delivery service,
+  construction site mobile toilets Kenya.
+</div>
+
           
           <!-- Improved paragraph with better readability -->
           <div class="text-lg sm:text-xl leading-relaxed max-w-3xl mx-auto space-y-2">
