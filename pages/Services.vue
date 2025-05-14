@@ -4,7 +4,7 @@
     <div class="relative bg-pink-600">
       <div class="absolute inset-0 bg-black opacity-40"></div>
       <img
-        src="/images/yotatoilet.jpg"
+        src="/images/services1.webp"
         alt="Mobile toilet at event"
         class="w-full h-96 object-cover"
       />
