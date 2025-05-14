@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
+  nitro: {
+    logLevel: 'debug'
+  },
   ssr: true,
   app: {
     head: {
@@ -49,5 +52,12 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/image',
     '@nuxt/eslint'
-  ]
+  ],
+  image: {
+    providers: {
+      ipx: {
+        // Options for the IPX provider
+      }
+  }
+  },
 })

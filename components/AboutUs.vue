@@ -2,198 +2,167 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay, EffectFade } from "swiper/modules";
 
+// Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
+
+// Animation triggers
+
+const features = [
+  {
+    title: "Clean & Reliable",
+    description: "Sparkling clean mobile toilets for a worry-free event experience",
+    icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+  },
+  {
+    title: "Fast Delivery",
+    description: "On-time delivery and setup, every time — no delays, no stress",
+    icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+  },
+  {
+    title: "Wide Coverage",
+    description: "Serving a wide range of events and locations with dependable mobile toilets",
+    icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+  },
+  {
+    title: "Pocket-Friendly",
+    description: "Affordable mobile restroom solutions without compromising on quality",
+    icon: "M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+  }
+]
+
+const aboutImages = [
+  {
+    src: "/images/standard1.webp",
+    alt: "Clean standard mobile toilet unit with handwashing station at an event in Nairobi"
+  },
+  {
+    src: "/images/IMG_20241227_084232_432.webp",
+    alt: "Well-maintained UrbanLoos portable toilet at a construction site in Nakuru"
+  },
+  {
+    src: "/images/IMG_20241227_084632_600.webp",
+    alt: "Premium event-ready mobile toilet unit with ventilation system in Kenya"
+  }
+]
 </script>
 
 <template>
-  <section class="py-24 relative xl:mr-0 lg:mr-5 mr-0 bg-gray-50" id="about">
-    <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto bg-gray-50">
-      <div
-        class="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1"
-      >
-        <div
-          class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex"
+  <section 
+    class="py-16 md:py-24 relative bg-gray-50"
+    id="about"
+    aria-labelledby="about-heading"
+  >
+    <div class="absolute inset-0 bg-[#5DBB63] opacity-5"></div>
+    
+    <div class="relative w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
+      <div class="text-center mb-12 lg:hidden">
+        <span class="inline-block px-3 py-1 text-sm font-medium text-[#5DBB63] bg-[#5DBB63]/10 rounded-full mb-3">
+          About UrbanLoos
+        </span>
+        <h2 id="about-heading" class="text-3xl md:text-4xl font-bold text-gray-900">
+          Our <span class="text-[#5DBB63]">Commitment</span> to Clean Sanitation
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div 
+          class="flex flex-col space-y-8"
         >
-          <div class="w-full flex-col justify-center items-start gap-8 flex">
-            <div
-              class="flex-col justify-start lg:items-start items-center gap-4 flex"
+          <div class="hidden lg:block space-y-4">
+            <span class="inline-block px-3 py-1 text-sm font-medium text-[#5DBB63] bg-[#5DBB63]/10 rounded-full">
+              About UrbanLoos
+            </span>
+            <h2 id="about-heading-desktop" class="text-3xl md:text-4xl font-bold text-gray-900">
+              Our <span class="text-[#5DBB63]">Commitment</span> to Clean Sanitation
+            </h2>
+            <p class="text-lg text-gray-600">
+              UrbanLoos is Kenya's premier mobile sanitation provider, delivering hygienic, reliable portable toilet solutions for events and construction sites across multiple counties.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div 
+              v-for="(feature, index) in features"
+              :key="index"
+              class="p-6 bg-white rounded-xl border border-gray-200 hover:border-[#5DBB63] transition-all duration-300 hover:shadow-lg"
+              aria-labelledby="`feature-${index}-title`"
             >
-              <h6 class="text-gray-800 text-base font-normal leading-relaxed">
-                About Us
-              </h6>
-              <div
-                class="w-full flex-col justify-start lg:items-start items-center gap-3 flex"
-              >
-                <h4
-                  class="text-[#5DBB63] text-4xl font-bold font-manrope leading-normal lg:text-start text-center"
-                >
-                  The Tale of Our Achievement Story
-                </h4>
-                <p
-                  class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center"
-                >
-                  At Urbanloos, we specialize in providing clean, reliable
-                  mobile toilet rentals for events of all sizes, from weddings
-                  and festivals to corporate gatherings. With a strong focus on
-                  hygiene standards, customer satisfaction, and on-time portable
-                  restroom delivery, we ensure your guests enjoy a comfortable,
-                  worry-free experience. Trust our expert team at Urbanloos to
-                  deliver high-quality event toilet hire solutions, tailored to
-                  meet your specific needs and make your event truly
-                  exceptional.
-                </p>
+              <div class="flex items-center mb-3">
+                <div class="w-10 h-10 rounded-full bg-[#5DBB63]/10 flex items-center justify-center mr-3">
+                  <svg class="w-5 h-5 text-[#5DBB63]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="feature.icon" />
+                  </svg>
+                </div>
+                <h3 :id="`feature-${index}-title`" class="text-xl font-bold text-gray-900">
+                  {{ feature.title }}
+                </h3>
               </div>
-            </div>
-            <div class="w-full flex-col justify-center items-start gap-6 flex">
-              <div
-                class="w-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1"
-              >
-                <div
-                  class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex"
-                >
-                  <h4
-                    class="text-gray-900 text-2xl font-bold font-manrope leading-9"
-                  >
-                    Clean & Reliable
-                  </h4>
-                  <p
-                    class="text-gray-500 text-base font-normal leading-relaxed"
-                  >
-                    "Sparkling clean mobile toilets for a worry-free event
-                    experience."
-                  </p>
-                </div>
-                <div
-                  class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex"
-                >
-                  <h4
-                    class="text-gray-900 text-2xl font-bold font-manrope leading-9"
-                  >
-                    Fast Delivery
-                  </h4>
-                  <p
-                    class="text-gray-500 text-base font-normal leading-relaxed"
-                  >
-                    "On-time delivery and setup, every time — no delays, no
-                    stress."
-                  </p>
-                </div>
-              </div>
-              <div
-                class="w-full h-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1"
-              >
-                <div
-                  class="w-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex"
-                >
-                  <h4
-                    class="text-gray-900 text-2xl font-bold font-manrope leading-9"
-                  >
-                    Wide Coverage
-                  </h4>
-                  <p
-                    class="text-gray-500 text-base font-normal leading-relaxed"
-                  >
-                    "Serving a wide range of events and locations with
-                    dependable mobile toilets."
-                  </p>
-                </div>
-                <div
-                  class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex"
-                >
-                  <h4
-                    class="text-gray-900 text-2xl font-bold font-manrope leading-9"
-                  >
-                    Pocket-Friendly
-                  </h4>
-                  <p
-                    class="text-gray-500 text-base font-normal leading-relaxed"
-                  >
-                    "Affordable mobile restroom solutions without compromising
-                    on quality."
-                  </p>
-                </div>
-              </div>
+              <p class="text-gray-600">{{ feature.description }}</p>
             </div>
           </div>
+
           <NuxtLink
             to="/about"
-            class="sm:w-fit w-full group px-3.5 py-2 bg-indigo-50 hover:bg-indigo-100 rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out justify-center items-center flex"
+            class="group inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-[#5DBB63] hover:bg-[#4da955] shadow-md transition-all duration-300 transform hover:scale-[1.02] w-full sm:w-auto"
+            aria-label="Learn more about UrbanLoos' story and services"
           >
-            <span
-              class="px-1.5 text-indigo-600 text-sm font-medium leading-6 group-hover:-translate-x-0.5 transition-all duration-700 ease-in-out"
-              >Learn More About Urbanloos</span
-            >
-            <svg
-              class="group-hover:translate-x-0.5 transition-all duration-700 ease-in-out"
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="none"
-            >
-              <path
-                d="M6.75265 4.49658L11.2528 8.99677L6.75 13.4996"
-                stroke="#4F46E5"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+            <span>Discover Our Story</span>
+            <svg class="ml-2 -mr-1 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
             </svg>
           </NuxtLink>
         </div>
-        <div class="w-full lg:justify-start justify-center items-start flex">
-          <div
-            class="sm:w-[564px] w-full sm:h-[646px] h-full bg-gray-300 rounded-3xl sm:border border-gray-200 relative"
-            style="background-size: cover; background-position: center"
-          >
-            <Swiper
-              :modules="[Autoplay, EffectFade]"
-              :slides-per-view="1"
-              :autoplay="{ delay: 5000, disableOnInteraction: true }"
-              :effect="'fade'"
-              :loop="true"
-              pagination
-              class="rounded-3xl sm:mt-5 sm:ml-5 w-full h-full"
-            >
-              <SwiperSlide>
-                <NuxtImg
-                  class="w-full h-full object-cover rounded-3xl"
-                  src="/images/standard1.webp"
-                  alt="About Us Image 1"
-                  width="564"
-                  height="646"
-                  loading="lazy"
-                />
-              </SwiperSlide>
 
-              <SwiperSlide>
-                <NuxtImg
-                  class="w-full h-full object-cover rounded-3xl"
-                  src="/images/IMG_20241227_084232_432.webp"
-                  alt="About Us Image 2"
-                  width="564"
-                  height="646"
-                  loading="lazy"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <NuxtImg
-                  class="w-full h-full object-cover rounded-3xl"
-                  src="/images/IMG_20241227_084632_600.webp"
-                  alt="About Us Image 3"
-                  width="564"
-                  height="646"
-                  loading="lazy"
-                />
-              </SwiperSlide>
-
-              <!-- Add as many SwiperSlide as you want -->
-            </Swiper>
-          </div>
+        <div 
+          class="relative"
+        >
+        <div class="w-full lg:justify-start justify-center">
+  <div class="w-full max-w-[564px] aspect-[4/5] lg:aspect-[564/646] rounded-3xl overflow-hidden shadow-xl border border-gray-200/50 lg:border-gray-200">
+    <Swiper
+      :modules="[Autoplay, EffectFade]"
+      :slides-per-view="1"
+      :autoplay="{
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      }"
+      :effect="'fade'"
+      :loop="true"
+      :speed="800"
+      class="w-full h-full"
+    >
+      <SwiperSlide v-for="(image, index) in aboutImages" :key="index">
+        <NuxtImg
+          class="w-full h-full object-cover"
+          :src="image.src"
+          :alt="image.alt"
+          width="564"
+          height="646"
+          loading="lazy"
+          format="webp"
+          quality="80"
+          sizes="(max-width: 640px) 95vw, (max-width: 1024px) 60vw, 564px"
+        />
+      </SwiperSlide>
+    </Swiper>
+    
+    <!-- Gradient Overlay -->
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/40 to-transparent z-[1]"></div>
+    
+    <!-- Custom Pagination -->
+    <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-[2]">
+      <div 
+        v-for="(_, index) in aboutImages" 
+        :key="index"
+        class="w-2.5 h-2.5 rounded-full bg-white/80 border border-white cursor-pointer transition-all duration-300 hover:bg-white"
+        :class="{ '!bg-white': activeIndex === index }"
+        @click="swiper.slideTo(index)"
+      ></div>
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </div>
