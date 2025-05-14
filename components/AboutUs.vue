@@ -157,7 +157,6 @@ const aboutImages = [
         v-for="(_, index) in aboutImages" 
         :key="index"
         class="w-2.5 h-2.5 rounded-full bg-white/80 border border-white cursor-pointer transition-all duration-300 hover:bg-white"
-        :class="{ '!bg-white': activeIndex === index }"
         @click="swiper.slideTo(index)"
       ></div>
     </div>

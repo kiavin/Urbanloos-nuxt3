@@ -2,7 +2,7 @@
   <section class="relative bg-[#5dbb63] overflow-hidden">
     <!-- Hero Container with optimized image -->
     <div class="relative w-full h-screen max-h-[92vh]">
-      <NuxtImg
+      <nuxt-img
         src="/images/IMG_20241227_084221_655.webp"
         class="absolute inset-0 w-full h-full object-cover"
         loading="eager"
@@ -13,6 +13,7 @@
         format="webp"
         quality="80"
         preload
+        provider="ipx"
       />
       
       <!-- Overlay with improved contrast -->

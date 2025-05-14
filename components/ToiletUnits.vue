@@ -67,7 +67,6 @@ const vipUnitImages = [
         <!-- Standard Unit -->
         <div
           class="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-500"
-          :class="{ 'animate-fade-up': standardUnitVisible }"
           style="view-transition-name: standard-unit"
         >
           <!-- Pricing Badge -->
@@ -93,7 +92,7 @@ const vipUnitImages = [
                 :key="index"
               >
                 <div class="w-full h-full">
-                  <NuxtImg
+                  <nuxt-img
                     class="w-full h-full object-cover"
                     :src="image.src"
                     :alt="image.alt"
@@ -104,6 +103,7 @@ const vipUnitImages = [
                     quality="100"
                     sizes="sm:100vw md:50vw lg:400px"
                     preload
+                    provider="ipx"
                   />
                 </div>
               </SwiperSlide>
@@ -235,7 +235,6 @@ const vipUnitImages = [
         <!-- VIP Unit -->
         <div
           class="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500"
-          :class="{ 'animate-fade-up': vipUnitVisible }"
           style="view-transition-name: vip-unit"
         >
           <!-- Pricing Badge -->
