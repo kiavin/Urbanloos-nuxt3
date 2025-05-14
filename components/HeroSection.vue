@@ -8,9 +8,6 @@
         alt="Premium mobile toilet rental service in Kenya - UrbanLoos"
         width="1920"
         height="1080"
-        format="webp"
-        quality="80"
-        priority
       />
       
       <!-- Overlay with improved contrast -->
