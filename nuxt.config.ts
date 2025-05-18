@@ -9,6 +9,7 @@ export default defineNuxtConfig({
   },  
   ssr: true,
   app: {
+    
     head: {
       title: 'Urbanloos | Mobile Toilet Rentals in Kenya – VIP, Events & Construction',
       htmlAttrs: {
@@ -23,13 +24,13 @@ export default defineNuxtConfig({
         { property: 'og:description', content: 'Professional mobile toilet rentals for events, weddings, and construction sites. Serving Nakuru, Kiambu, Narok, Nyandarua, Laikipia and more.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://www.urbanloos.com' },
-        { property: 'og:image', content: 'https://www.urbanloos.com/images/og-image.webp' },
+        { property: 'og:image', content: 'https://www.urbanloos.com/images/urban-loos-favicon-color.png' },
   
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'Urbanloos | Clean, Reliable Mobile Toilets in Kenya' },
         { name: 'twitter:description', content: 'VIP toilets, event sanitation, and mobile loos across Nakuru, Kiambu, Narok, and beyond.' },
-        { name: 'twitter:image', content: 'https://www.urbanloos.com/images/og-image.webp' },
+        { name: 'twitter:image', content: 'https://www.urbanloos.com/images/urban-loos-favicon-color.png' },
   
         // Robots
         { name: 'robots', content: 'index, follow' }
@@ -38,7 +39,7 @@ export default defineNuxtConfig({
         // Canonical URL
         { rel: 'canonical', href: 'https://www.urbanloos.com' },
         // Favicon
-        { rel: 'icon', type: 'image/png', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/png', href: '/images/urban-loos-favicon-color.png' }
       ]
     }
   },  

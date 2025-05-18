@@ -3,6 +3,32 @@ import NavBar from "~/components/NavBar.vue";
 import FooterSection from "~/components/FooterSection.vue";
 import FloatingWhatsApp from "~/components/FloatingWhatsApp.vue";
 
+
+const isLoading = ref(true)
+
+// Handle initial load
+onMounted(() => {
+  // Simulate loading (remove this in production)
+  setTimeout(() => {
+    isLoading.value = false
+  }, 2000)
+})
+
+// Handle route changes
+const router = useRouter()
+router.beforeEach(() => {
+  isLoading.value = true
+})
+
+router.afterEach(() => {
+  // Add slight delay for better UX
+  setTimeout(() => {
+    isLoading.value = false
+  }, 300)
+})
+
+
+
 useSeoMeta({
   description:
     "Looking for mobile toilets near you? UrbanLoos offers clean, affordable portable toilets across Kenya. Book mobile toilets for events and construction sites today.",
@@ -90,5 +116,6 @@ useHead({
     <NuxtPage />
     <FloatingWhatsApp v-if="$route.path !== '/contact'" />
     <FooterSection />
+
   </div>
 </template>
