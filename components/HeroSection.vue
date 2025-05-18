@@ -79,7 +79,7 @@
 <script setup>
 // SEO Meta Configuration
 useHead({
-  title: 'Premium Mobile Toilet Rentals in Kenya | UrbanLoos',
+  title: 'Mobile Toilets in Kenya | UrbanLoos',
   meta: [
     { 
       name: 'description', 
