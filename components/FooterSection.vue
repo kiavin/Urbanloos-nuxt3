@@ -5,12 +5,17 @@
         <!-- Brand Column -->
         <div class="sm:col-span-2">
           <div class="flex items-center">
-            <svg class="w-10 text-pink-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- <svg class="w-10 text-pink-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3 1H10V13H3V1Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               <path d="M3 17H10V23H3V17Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               <path d="M14 1H21V7H14V1Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
               <path d="M14 11H21V23H14V11Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-            </svg>
+            </svg> -->
+            <NuxtImg src="/images/urban-loos-favicon-color.png"
+            height="90"
+            width="90"
+            
+            />
             <span class="ml-3 text-2xl font-bold text-pink-500">UrbanLoos</span>
           </div>
           <p class="mt-6 text-gray-600 leading-relaxed">
