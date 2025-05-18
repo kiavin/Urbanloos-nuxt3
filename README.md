@@ -1,76 +1,47 @@
-# Nuxt Minimal Starter
+# 🚽 UrbanLoos - Mobile Toilet Unit Website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> A modern, responsive, and accessible website for showcasing premium mobile toilet units. Built with Vue 3, Tailwind CSS, and Swiper.js, hosted on LiteSpeed.
 
-## Setup
+![UrbanLoos Hero Screenshot](https://urbanloos.com/screenshot.png)
 
-Make sure to install dependencies:
+---
+
+### 🔗 Live Preview
+
+🌐 **Live Site**: [urbanloos.com](https://urbanloos.com)
+
+---
+
+### 🛠️ Built With
+
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![SwiperJS](https://img.shields.io/badge/SwiperJS-6332F6?style=for-the-badge)
+![LiteSpeed](https://img.shields.io/badge/LiteSpeed-Web%20Server-blue?style=for-the-badge)
+
+---
+
+### 📸 Features
+
+- 🌀 Swiper-powered responsive image carousel
+- 🌙 Dark mode with seamless transitions
+- 📱 Mobile-first design
+- ⚡ Fast, SEO-optimized, and hosted on LiteSpeed
+- ♿ Accessible and semantic HTML
+
+---
+
+### 📦 Installation
 
 ```bash
-# npm
+# Clone the repository
+git clone https://github.com/yourusername/urbanloos.git
+
+# Navigate to the project folder
+cd urbanloos
+
+# Install dependencies
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# Run the development server
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-# Urbanloos-nuxt3
