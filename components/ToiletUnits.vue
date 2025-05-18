@@ -246,7 +246,7 @@ const vipUnitImages = [
           <div
             class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-gray-900 px-3 py-1.5 rounded-lg z-10 shadow-md border border-gray-200/80 font-medium flex items-center"
           >
-            <span class="text-yellow-600 font-semibold">KSh 9,500</span>
+            <span class="text-yellow-600 font-semibold">KSh 15,000</span>
             <span class="text-xs text-gray-600 ml-1">/day</span>
           </div>
 
