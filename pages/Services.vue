@@ -224,7 +224,7 @@
               <div
                 class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm font-semibold"
               >
-                KSh 9,500/day
+                KSh 15,000/day
               </div>
             </div>
             <p class="text-gray-600 mb-6">
