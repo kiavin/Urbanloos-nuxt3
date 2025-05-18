@@ -2,19 +2,19 @@
   <nav
     :class="['sticky top-0 z-50 transition-colors duration-300 border-none bg-white text-gray-900']"
     role="navigation"
-    style="height: 8vh"
+    style="min-height: 8vh"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-full pt-3">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center">
-          <a
-            href="/"
+          <NuxtLink
+            to="/"
             aria-label="Go home"
             title="Company"
             class="inline-flex items-center"
           >
-            <svg
+            <!-- <svg
               class="w-8 text-pink-400"
               viewBox="0 0 24 24"
               stroke-linejoin="round"
@@ -28,12 +28,17 @@
               <rect x="3" y="17" width="7" height="6"></rect>
               <rect x="14" y="1" width="7" height="6"></rect>
               <rect x="14" y="11" width="7" height="12"></rect>
-            </svg>
+            </svg> -->
+            <NuxtImg
+              src="/images/urban-loos-favicon-color.png"
+              height="60"
+              width="60"
+            />
             <span
               class="ml-2 text-xl font-bold tracking-wide text-pink-600 uppercase"
               >Urbanloos</span
             >
-          </a>
+          </NuxtLink>
         </div>
 
         <!-- Hamburger Menu Button -->
