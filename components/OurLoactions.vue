@@ -95,7 +95,7 @@
                     ></div>
                     <NuxtImg
                         src="/images/olkalou.webp"
-                        alt="Gilgil"
+                        alt="nakuru"
                         class="w-full h-full object-cover shadow"
                         width="400"
                         height="400"
@@ -103,7 +103,7 @@
                     />
                     <div class="absolute bottom-0 mb-6 text-center px-6">
                         <h5 class="text-white text-lg font-semibold leading-7 mb-2">
-                            Gilgil
+                            Nakuru
                         </h5>
                     </div>
                 </div>

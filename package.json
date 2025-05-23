@@ -23,6 +23,8 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@nuxtjs/robots": "^5.2.10",
+    "@nuxtjs/sitemap": "^7.3.0",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3"
   }

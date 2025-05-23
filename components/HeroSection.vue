@@ -22,7 +22,7 @@
           
           <!-- Headline with semantic hierarchy -->
           <h1 class="font-bebas-neue uppercase text-5xl sm:text-7xl lg:text-8xl font-black leading-tight mb-4">
-            <span class="block text-white">Luxury Loos.</span>
+            <span class="block text-white">Mobile Toilets.</span>
             <span class="block text-white text-4xl sm:text-6xl lg:text-7xl">Everyday Prices.</span>
             <span class="block text-[#5dbb63] text-4xl sm:text-6xl lg:text-7xl">Everywhere You Need Us</span>
           </h1>
@@ -83,11 +83,11 @@ useHead({
   meta: [
     { 
       name: 'description', 
-      content: 'Rent luxury mobile toilets at affordable prices across Kenya. Serving Nakuru, Kiambu, Narok, Nyandarua, and Laikipia with premium sanitation solutions.' 
+      content: 'mobile toilets at affordable prices across Kenya. Serving Nakuru, Kiambu, Narok, Nyandarua, and Laikipia with premium sanitation solutions.' 
     },
     {
       name: 'keywords',
-      content: 'mobile toilet rental Kenya, portable toilets Nakuru, luxury loos Kiambu, construction toilets Narok, event toilets Nyandarua, sanitation services Laikipia'
+      content: 'mobile toilet rental Kenya, portable toilets Nakuru, mobile toilets Kiambu, construction toilets Narok, event toilets Nyandarua, sanitation services Laikipia'
     },
     {
       property: 'og:image',

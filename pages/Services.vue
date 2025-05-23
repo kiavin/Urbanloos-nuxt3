@@ -25,7 +25,7 @@
     </div>
 
     <!-- Features Banner -->
-    <div class="bg-pink-700 text-white py-6">
+    <div class="bg-[#00A63E] text-white py-6">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           <div class="flex flex-col items-center">
@@ -202,7 +202,7 @@
             </ul>
 
             <button
-              class="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
+              class="w-full bg-[#00A63E] hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
             >
               Book Standard Unit
             </button>
@@ -325,7 +325,7 @@
             </ul>
 
             <button
-              class="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
+              class="w-full bg-[#00A63E] hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
             >
               Book VIP Unit
             </button>
@@ -471,7 +471,7 @@
 
       <!-- CTA Section -->
       <div
-        class="mt-16 bg-gradient-to-r from-pink-600 to-pink-700 rounded-xl shadow-lg overflow-hidden"
+        class="mt-16 bg-gradient-to-r from-[#00A63E] to-[#25D366] rounded-xl shadow-lg overflow-hidden"
       >
         <div class="p-8 md:p-12 text-center">
           <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">
@@ -490,7 +490,7 @@
             </a>
             <a
               href="https://wa.me/254715557481"
-              class="bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+              class="bg-white  text-green-600 py-3 px-6 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
