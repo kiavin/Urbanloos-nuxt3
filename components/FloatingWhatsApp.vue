@@ -24,9 +24,8 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const messages = [
   "Get a Quote Now",
-  "Toilet Awaits You!",
   "Message Us Now",
-  "Instant Quote Here",
+  "Get Instant Quote Here",
   "Let’s Talk on WhatsApp"
 ]
 

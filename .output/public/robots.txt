@@ -2,5 +2,7 @@
 User-agent: *
 Disallow: 
 
+Disallow: 
+
 Sitemap: https://www.urbanloos.com/sitemap.xml
 # END nuxt-robots

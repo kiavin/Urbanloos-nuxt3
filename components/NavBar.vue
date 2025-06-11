@@ -117,6 +117,16 @@
           >
             Services
           </NuxtLink>
+          <!-- //Faq -->
+          <NuxtLink
+            to="/Faq"
+            :class="[
+              'nav-link border-none block md:inline-block px-4 py-2 rounded-full hover:bg-pink-400',
+              route.path === '/faq' ? 'bg-[#5DBB63] text-black' : ''
+            ]"
+          >
+            FAQ
+          </NuxtLink>
           <NuxtLink
             to="/Contact"
             :class="[
