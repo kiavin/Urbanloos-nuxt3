@@ -1,9 +1,9 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  // nitro: {
-  //   preset: 'static'
-  // },
+  nitro: {
+    preset: 'static'
+  },
   ssr: true,
   app: {
     head: {
