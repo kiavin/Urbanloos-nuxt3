@@ -1,9 +1,9 @@
 import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
+  ssr: false,
   nitro: {
     preset: 'static'
   },
-  ssr: true,
   app: {
     head: {
       title: "Urbanloos | Mobile Toilet Rentals in Kenya - Events & Construction Sites",
