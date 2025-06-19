@@ -1,5 +1,5 @@
 import tailwindcss from "@tailwindcss/vite";
-
+// attemps
 export default defineNuxtConfig({
   nitro: {
     preset: 'static'
