@@ -1,11 +1,24 @@
 <script setup>
 // import all components 
+import { useHead, useRoute } from '#imports'
 import HeroSection from '~/components/HeroSection.vue'
 import AboutUs from '~/components/AboutUs.vue'
 import ActionCall from '~/components/ActionCall.vue'
 import ToiletUnits from '~/components/ToiletUnits.vue'
 import HowItWorks from '~/components/HowItWorks.vue'
 import OurLoactions from '~/components/OurLoactions.vue'
+
+const route = useRoute()
+const canonical = 'https://www.urbanloos.com' + route.path
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: canonical.endsWith('/') ? canonical : canonical + '/'
+    }
+  ]
+})
 
 </script>
 

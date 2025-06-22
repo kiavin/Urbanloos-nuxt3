@@ -185,6 +185,20 @@
   
   <script setup>
   import { ref, computed } from 'vue';
+  import { useHead, useRoute } from '#imports'
+
+
+const route = useRoute()
+const canonical = 'https://www.urbanloos.com' + route.path
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: canonical.endsWith('/') ? canonical : canonical + '/'
+    }
+  ]
+})
   
   const formData = ref({
     name: '',

@@ -1,0 +1,39 @@
+
+FreeCAD Workbench: Part Design + A2Plus (Assembly)
+Project Name: Custom Work Desk
+
+Components:
+1. Legs (4):
+   - Profile: 40x40 mm square tube
+   - Length: 71.5 cm
+   - Features: 2 bolt holes on top and side (M8)
+
+2. Long Beams (2):
+   - Length: 160 cm
+   - Profile: 40x40 mm
+   - Features: Bolt holes on each end
+
+3. Short Beams (2):
+   - Length: 67 cm
+   - Profile: 40x40 mm
+   - Positioned between long beams
+
+4. Crossbars (2-3):
+   - Length: ~67 cm
+   - Profile: 40x20 mm
+   - Positioned front to back
+
+5. Tabletop:
+   - Size: 160 x 75 x 2.5 cm
+   - Material: Wood (visual only in FreeCAD)
+
+6. Assembly:
+   - Bolted using A2Plus constraints
+   - M8 bolts & washers positioned via Fasteners WB
+
+Next Step:
+1. Open FreeCAD.
+2. Use the Part Design workbench to sketch and pad each component.
+3. Save each as a separate part file.
+4. Import all parts into an A2Plus Assembly.
+5. Apply plane and concentric constraints.

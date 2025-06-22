@@ -22,7 +22,7 @@
             Kenya's premier mobile sanitation solution. We deliver clean, reliable, and affordable portable restrooms for events of all sizes across multiple counties.
           </p>
           <div class="mt-6">
-            <NuxtLink to="/contact" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
+            <NuxtLink to="/contact/" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
               Get Instant Quote
             </NuxtLink>
           </div>

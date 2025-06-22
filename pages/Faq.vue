@@ -1,9 +1,21 @@
 <script setup>
 import { ref, computed, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import { useHead } from "#imports";
 
 const route = useRoute();
 const router = useRouter();
+
+const canonical = "https://www.urbanloos.com" + route.path;
+
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: canonical.endsWith("/") ? canonical : canonical + "/",
+    },
+  ],
+});
 
 // FAQ data moved inside the component
 const faqCategories = ref([
@@ -72,40 +84,40 @@ const faqs = ref([
     category: "services",
   },
   {
-  id: 9,
-  question: "Can I hire toilets for just one day?",
-  answer:
-    "Absolutely. We offer flexible hire durations including single-day, weekend, and long-term rentals depending on your needs.",
-  category: "services",
-},
-{
-  id: 10,
-  question: "Are your toilets suitable for remote or off-grid locations?",
-  answer:
-    "Yes, our mobile toilets are fully self-contained and do not require external plumbing or electricity, making them ideal for off-grid use.",
-  category: "services",
-},
-{
-  id: 11,
-  question: "Is a deposit required to confirm booking?",
-  answer:
-    "Yes, we typically require a 50% deposit to confirm your booking. The balance is due before or upon delivery unless otherwise arranged.",
-  category: "booking",
-},
-{
-  id: 12,
-  question: "Are there discounts for bulk or long-term rentals?",
-  answer:
-    "Yes, we offer discounted rates for large orders or long-term rentals. Contact our sales team for a custom quote.",
-  category: "pricing",
-},
-{
-  id: 13,
-  question: "Do your prices include delivery and setup?",
-  answer:
-    "Setup is fully included in our pricing. However, delivery charges vary depending on the distance to your location. We’ll provide a clear quote with the delivery fee based on your site.",
-  category: "pricing",
-}
+    id: 9,
+    question: "Can I hire toilets for just one day?",
+    answer:
+      "Absolutely. We offer flexible hire durations including single-day, weekend, and long-term rentals depending on your needs.",
+    category: "services",
+  },
+  {
+    id: 10,
+    question: "Are your toilets suitable for remote or off-grid locations?",
+    answer:
+      "Yes, our mobile toilets are fully self-contained and do not require external plumbing or electricity, making them ideal for off-grid use.",
+    category: "services",
+  },
+  {
+    id: 11,
+    question: "Is a deposit required to confirm booking?",
+    answer:
+      "Yes, we typically require a 50% deposit to confirm your booking. The balance is due before or upon delivery unless otherwise arranged.",
+    category: "booking",
+  },
+  {
+    id: 12,
+    question: "Are there discounts for bulk or long-term rentals?",
+    answer:
+      "Yes, we offer discounted rates for large orders or long-term rentals. Contact our sales team for a custom quote.",
+    category: "pricing",
+  },
+  {
+    id: 13,
+    question: "Do your prices include delivery and setup?",
+    answer:
+      "Setup is fully included in our pricing. However, delivery charges vary depending on the distance to your location. We’ll provide a clear quote with the delivery fee based on your site.",
+    category: "pricing",
+  },
 ]);
 
 const activeCategory = ref(route.query.category || "all");

@@ -12,4 +12,18 @@
 
 <script setup>
 // Nothing needed here unless you want logic
+import { useHead, useRoute } from '#imports'
+
+
+const route = useRoute()
+const canonical = 'https://www.urbanloos.com' + route.path
+
+useHead({
+  link: [
+    {
+      rel: 'canonical',
+      href: canonical.endsWith('/') ? canonical : canonical + '/'
+    }
+  ]
+})
 </script>

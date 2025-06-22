@@ -490,7 +490,7 @@
             </a>
             <a
               href="https://wa.me/254715557481"
-              class="bg-white  text-green-600 py-3 px-6 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
+              class="bg-white text-green-600 py-3 px-6 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -511,20 +511,25 @@
   </div>
 </template>
 
-<script>
-export default {
-  head() {
-    return {
-      title: "Mobile Toilet Rentals | UrbanLoos Kenya",
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "Rent clean, attended mobile toilets in Kenya. Standard units at KSh 5,500/day with free toiletries and air fresheners. VIP options available for events.",
-        },
-      ],
-    };
-  },
-};
+<script setup>
+import { useHead, useRoute } from "#imports";
+
+const route = useRoute()
+const canonical = 'https://www.urbanloos.com' + route.path
+useHead({
+  title: "Mobile Toilet Rentals | UrbanLoos Kenya",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Rent clean, attended mobile toilets in Kenya. Standard units at KSh 5,500/day with free toiletries and air fresheners. VIP options available for events.",
+    },
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: canonical.endsWith("/") ? canonical : canonical + "/",
+    },
+  ],
+});
 </script>

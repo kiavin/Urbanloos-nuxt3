@@ -30,7 +30,7 @@
                 <h4 class="text-[#fff] text-[20px] hidden md:block">
                   "Book Your Clean, Reliable Mobile Toilet Today — Make Your
                   Event Comfortable and Worry-Free!"
-                  <NuxtLink to="/contact">
+                  <NuxtLink to="/contact/">
                     <span
                       class="text-[#f0bb0c] underline underline-[#fff] underline-offset-2"
                     >
@@ -38,7 +38,7 @@
                     </span>
                   </NuxtLink>
                 </h4>
-                <NuxtLink to="/contact">
+                <NuxtLink to="/contact/">
                   <button
                     class="bg-[#f0bb0c] rounded-lg py-2 px-16 mt-4 hover:bg-[#fff] sm:mt-4 sm:mx-auto"
                   >
