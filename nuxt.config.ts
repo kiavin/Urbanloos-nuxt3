@@ -2,7 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
    ssr: true, // Enable SSR
   nitro: {
-    preset: 'static' // optimize for Vercel platform
+    preset: 'vercel' // optimize for Vercel platform
   },
   app: {
     head: {
