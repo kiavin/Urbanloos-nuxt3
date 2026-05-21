@@ -35,7 +35,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/urbanloos.git
+git clone https://github.com/kiavin/urbanloos.git
 
 # Navigate to the project folder
 cd urbanloos
